@@ -2,7 +2,20 @@
 
 <head>
     <title>Gomaze</title>
-    <meta http-equiv="refresh" content="0; url=https://play.google.com/store/apps/details?id=team.threeplayers.gomaze">
+
+    <script>
+        var androidURL = "https://play.google.com/store/apps/details?id=team.threeplayers.gomaze"
+        var pcURL = "https://8pixels.itch.io/gomaze"
+        var redirectURL = pcURL;
+
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+        if (/android/i.test(userAgent)) {
+            redirectURL = androidURL;
+        }
+
+        window.location.href = redirectURL;
+    </script>
+
 </head>
 
 </html>
