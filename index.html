@@ -9,9 +9,10 @@
         var redirectURL = pcURL;
 
         var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+        /* google play removed the app again
         if (/android/i.test(userAgent)) {
             redirectURL = androidURL;
-        }
+        }*/
 
         window.location.href = redirectURL;
     </script>
